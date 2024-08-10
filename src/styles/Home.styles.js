@@ -22,7 +22,7 @@ export const HeaderHome = styled.div`
     li {
         color: #ffff;
         margin: 0 20px;
-        font-size: 22px;
+        font-size: 30px;
         cursor: pointer;
         transition: color 0.3 ease;
     }
@@ -31,7 +31,7 @@ export const HeaderHome = styled.div`
     }
     .logo{
         padding: 0;
-        height: 60px;
+        height: 80px;
         width: auto;  
     }
     .home {
@@ -62,6 +62,10 @@ export const HeaderHome = styled.div`
         max-width:700px;
     }
 
+    a {
+        text-decoration: none;
+    }
 
-
+`
+export const content = styled.div`
 `

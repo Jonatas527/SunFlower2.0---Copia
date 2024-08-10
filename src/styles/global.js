@@ -15,7 +15,8 @@ export const GlobalStyle = createGlobalStyle`
       background: ${props => props.theme.HomeCorFundo};
       
     } 
-   
+    
+
 
     
 
