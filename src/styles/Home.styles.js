@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
-export const HeaderHome = styled.div`
+
+export const Conteudo = styled.div`
     header {
-        position: fixed;
+        position:fixed;
         padding: 20px;
         width: 100%;
         z-index: 1000;
@@ -72,8 +73,11 @@ export const Beneficio = styled.div`
 `
 
 export const ShortVideo = styled.div`
-  margin: 20px 0;
-  padding-top: 10rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   
 
   iframe {
