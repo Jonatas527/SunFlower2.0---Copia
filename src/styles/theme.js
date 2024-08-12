@@ -1,5 +1,5 @@
 export const theme = {
-    HomeCorFundo:"#030710",
+    HomeCorFundo:"#00040D",
     
     
 }

@@ -3,41 +3,43 @@ import styled from "styled-components"
 
 export const Conteudo = styled.div`
     header {
-        position:fixed;
-        padding: 20px;
+        position: fixed;
+        background: ${props => props.theme.HomeCorFundo};
+        padding: 5px 10px; 
         width: 100%;
         z-index: 1000;
+        height: 50px; 
     }
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100%; 
     }
     ul {
         display: flex;
-        padding: 20px;
+        padding: 0; 
         list-style-type: none;
-        margin: 10px;
+        margin: 0;
     }
     li {
         color: #ffff;
         margin: 0 20px;
-        font-size: 30px;
+        font-size: 20px; 
         cursor: pointer;
-        transition: color 0.3 ease;
+        transition: color 0.3s ease;
     }
     li:hover {
         color: #000;
     }
-    .logo{
+    .logo {
         padding: 0;
-        height: 80px;
-        width: auto;  
+        height: 50px; 
+        width: auto;
     }
     .home {
         font-size: 2rem;
         margin-bottom: 3rem;
-        
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -51,37 +53,16 @@ export const Conteudo = styled.div`
         padding-top: 80px;
         padding: 0 20px;
     }
-    .home h1{
+    .home h1 {
         margin: 0 auto;
-        max-width:800px;
-      
+        max-width: 800px;
     }
     .home p {
         margin: 0 auto;
         font-size: 2.5rem;
-        max-width:700px;
+        max-width: 700px;
     }
-
     a {
         text-decoration: none;
     }
-
 `
-export const Beneficio = styled.div`
-
-
-`
-
-export const ShortVideo = styled.div`
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  
-
-  iframe {
-    max-width: 100%;
-    height: auto;
-  }
-`;

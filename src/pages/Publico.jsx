@@ -1,4 +1,4 @@
-import { Container, Title, TargetGroup, Group, GroupTitle, GroupText } from '../styles/PublicoAlvo.styles';
+import { Container, Title, TargetGroup, Group, GroupTitle, GroupText } from '../styles/Publico.styles';
 
 const Publi = () => {
   return (

@@ -1,4 +1,4 @@
-import fundo from '../assets/fundoHome.jpg';
+import fundo from '../assets/fundoHome.png';
 import { Conteudo } from '../styles/Home.styles';
 import logoImg from "../assets/logoSunflower.png";
 
