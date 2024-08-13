@@ -12,7 +12,7 @@ import insta from '../assets/icones/insta.png'
 
 export function Grupo() {
     return (
-        <Integrantes>
+        <Integrantes id='integrantes'>
             <div className="background" style={{ backgroundImage: `url(${fundoG})` }}></div>
             <div className="container">
                 <h2 className="title">Integrantes:</h2>

@@ -27,7 +27,7 @@ export default function Carossel() {
   
   
   return (
-    <Carrossel>
+    <Carrossel id="Carrossel">
       <h2 id="pecas">Peças</h2>
       <div className="Carrossel">
         <Slider {...settings}>

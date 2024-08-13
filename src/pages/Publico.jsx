@@ -2,7 +2,7 @@ import { Container, Title, TargetGroup, Group, GroupTitle, GroupText } from '../
 
 const Publi = () => {
   return (
-    <Container>
+    <Container id='publico'>
       <Title>Público-alvo</Title>
       <TargetGroup>
         <Group>

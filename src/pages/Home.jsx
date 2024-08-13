@@ -12,13 +12,13 @@ export function Home() {
     <Conteudo>
       <header>
         <nav>
-          <img src={logoImg} className="logo" alt="Logo da SunFlower" />
+          <a href="#"><img src={logoImg} className="logo" alt="Logo da SunFlower" /></a>
           <ul>
             <a href="#"><li>Home</li></a>
-            <a href="#"><li>Público-alvo</li></a>
+            <a href="#publico"><li>Público-alvo</li></a>
             <a href="#"><li>Benefícios</li></a>
-            <a href=""><li>Peças</li></a>
-            <a href="#"><li>Grupo</li></a>
+            <a href="#Carrossel"><li>Peças</li></a>
+            <a href="#integrantes"><li>Grupo</li></a>
           </ul>
         </nav>
       </header>
