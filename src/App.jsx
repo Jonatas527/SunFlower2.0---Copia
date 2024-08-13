@@ -1,10 +1,12 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-import { Home } from './pages/Home';
-import Publi from './pages/Publico'; // Importação default
-import Grupo from './pages/Grupo'
-import Beneficios from './pages/Beneficios';
+
+import  Landing from './pages/LandingPage';
+import  Publi  from './pages/Publico'; // Importação default
+import Grupo from './pages/Grupo';
+import Peças from './pages/Pecas';
+
 
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
@@ -13,7 +15,7 @@ import { GlobalStyle } from './styles/global';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: <Landing/>,
   },
   {
     path: '/publi',
@@ -24,18 +26,21 @@ const router = createBrowserRouter([
     element: <Grupo />,
   },
   {
-    path: '/bene',
-    element: <Beneficios/>,
+    path: '/peça',
+    element: <Peças />,
   },
+
 ]);
 
 
 export function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <RouterProvider router={router} />
-    </ThemeProvider>
+
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <RouterProvider router={router} />
+      </ThemeProvider>
+
   );
 }
 

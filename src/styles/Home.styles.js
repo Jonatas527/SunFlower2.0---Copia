@@ -66,3 +66,13 @@ export const Conteudo = styled.div`
         text-decoration: none;
     }
 `
+
+export const Video = styled.div`
+
+ .short-video{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+ }
+
+`
