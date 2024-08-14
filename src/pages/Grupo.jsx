@@ -14,8 +14,8 @@ export function Grupo() {
     return (
         <Integrantes id='integrantes'>
             <div className="background" style={{ backgroundImage: `url(${fundoG})` }}></div>
+            <h2 className="title">Integrantes:</h2>
             <div className="container">
-                <h2 className="title">Integrantes:</h2>
                 <div className="integrantes">
                     <div className="integrante">
                         <img src={jonatas} alt="Jônatas Siqueira" />

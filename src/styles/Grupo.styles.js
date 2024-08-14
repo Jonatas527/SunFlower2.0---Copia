@@ -20,6 +20,15 @@ export const Integrantes = styled.div`
     z-index: -1;
   }
 
+  .title{
+
+    padding-bottom:20px;
+    font-size: 40px;
+    color:#DFDEFF ;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
   .container {
     position: relative;
     z-index: 1;
@@ -52,8 +61,12 @@ export const Integrantes = styled.div`
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave */
   }
-
+.social-links img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho dos ícones ao passar o mouse */
+    filter: brightness(1.2); /* Aumenta o brilho dos ícones ao passar o mouse */
+}
   .integrante h3 {
     margin-bottom: 10px;
     font-size: 1.5em;

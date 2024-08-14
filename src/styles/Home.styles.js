@@ -30,7 +30,7 @@ export const Conteudo = styled.div`
         transition: color 0.3s ease;
     }
     li:hover {
-        color: #000;
+        color: #938E8E;
     }
     .logo {
         padding: 0;
@@ -65,6 +65,14 @@ export const Conteudo = styled.div`
     a {
         text-decoration: none;
     }
+    .grup{
+        color: #ffff;
+        margin: 0 20px;
+        font-size: 20px; 
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    
 `
 
 export const Video = styled.div`

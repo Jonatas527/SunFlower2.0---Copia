@@ -3,6 +3,10 @@ import { Conteudo } from '../styles/Home.styles';
 import { Video } from '../styles/Home.styles';
 import logoImg from "../assets/logoSunflower.png";
 
+import { Link } from 'react-router-dom';
+
+
+
 
 
 
@@ -14,11 +18,11 @@ export function Home() {
         <nav>
           <a href="#"><img src={logoImg} className="logo" alt="Logo da SunFlower" /></a>
           <ul>
+
             <a href="#"><li>Home</li></a>
             <a href="#publico"><li>Público-alvo</li></a>
-            <a href="#"><li>Benefícios</li></a>
             <a href="#Carrossel"><li>Peças</li></a>
-            <a href="#integrantes"><li>Grupo</li></a>
+            <Link to="/grup"><li>Grupo</li> </Link> 
           </ul>
         </nav>
       </header>
