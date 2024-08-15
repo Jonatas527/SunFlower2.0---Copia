@@ -4,30 +4,31 @@ export const Conteudo = styled.div`
   * {
     padding: 0;
     margin: 0;
-    font-family: 'Inter', sans-serif; /* Fonte conforme o CSS original */
+    font-family: 'Inter', sans-serif; 
   }
 
   header {
-    background-color: #00040D; /* Cor de fundo do cabeçalho */
-    box-shadow: 0px 3px 10px #464646; /* Sombra do cabeçalho */
+    background-color: #00040D; 
+    box-shadow: 0px 3px 10px #464646; 
   }
 
   .nav-bar img {
     padding: 0;
-    height: 50px; 
+    height: 65px; 
     width: auto;
   }
 
   .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 0; /* Padding conforme o CSS original */
+    padding: 0; 
     align-items: center;
   }
 
   .nav-list {
     display: flex;
     align-items: center;
+    
   }
 
   .nav-list ul {
@@ -42,24 +43,17 @@ export const Conteudo = styled.div`
 
   .nav-link {
     text-decoration: none;
-    font-size: 1.15rem; /* Tamanho da fonte dos links do menu */
+    font-size: 20px; /* Tamanho da fonte dos links do menu */
     color: #fff; /* Cor dos links do menu */
     font-weight: 400;
+    cursor: pointer; /* Cursor de ponteiro */
+    border: none; /* Sem borda */
+  }
+  .nav-link:hover {
+    color:  #45a049;
   }
 
-  .login-button button {
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #0187a7; /* Cor do botão de login */
-  }
 
-  .login-button button a {
-    text-decoration: none;
-    color: #fff; /* Cor do texto do botão de login */
-    font-weight: 500;
-    font-size: 1.1rem;
-  }
 
   .mobile-menu-icon {
     display: none;
@@ -104,9 +98,7 @@ export const Conteudo = styled.div`
     .nav-item {
       display: none;
     }
-    .login-button {
-      display: none;
-    }
+
     .mobile-menu-icon {
       display: block;
     }
@@ -125,13 +117,8 @@ export const Conteudo = styled.div`
       display: block;
       padding-top: 1.2rem;
     }
-    .mobile-menu .login-button {
-      display: block;
-      padding: 1rem 2rem;
-    }
-    .mobile-menu .login-button button {
-      width: 100%;
-    }
+
+
     .open {
       display: block;
     }
@@ -147,7 +134,7 @@ export const Conteudo = styled.div`
       max-width: 100%; /* Faz o parágrafo ocupar toda a largura disponível */
     }
   }
-`;
+`
 
 export const Video = styled.div`
   .short-video {
@@ -166,7 +153,7 @@ export const Video = styled.div`
     .short-video iframe {
       width: 100%;
       height: auto;
-      max-width: 300px; /* Ajusta a largura máxima do vídeo no mobile */
+      max-width: 300px; //Ajusta a largura máxima do vídeo no mobile 
     }
   }
-`;
+`

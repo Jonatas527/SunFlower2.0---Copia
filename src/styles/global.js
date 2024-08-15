@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     body{
       font-size:1.6rem;
       background: ${props => props.theme.HomeCorFundo};
+      width: 100%;
       
     } 
     

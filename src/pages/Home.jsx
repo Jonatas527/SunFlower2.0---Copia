@@ -35,9 +35,7 @@ export function Home() {
               <li className="nav-item"><Link to="/grup" className="nav-link">Grupo</Link></li>
             </ul>
           </div>
-          <div className="login-button">
-            <button><a href="#">Entrar</a></button>
-          </div>
+          
           <div className="mobile-menu-icon">
             <button onClick={menuShow}><img className="icon" src={menuOpenIcon} alt="Menu Icon" /></button>
           </div>
@@ -49,9 +47,7 @@ export function Home() {
             <li className="nav-item"><a href="#Carrossel" className="nav-link">Peças</a></li>
             <li className="nav-item"><Link to="/grup" className="nav-link">Grupo</Link></li>
           </ul>
-          <div className="login-button">
-            <button><a href="#">Entrar</a></button>
-          </div>
+          
         </div>
       </header>
       <div className="home" style={{ backgroundImage: `url(${fundo})` }}>
