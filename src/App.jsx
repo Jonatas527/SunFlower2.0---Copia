@@ -7,6 +7,7 @@ import  Publi  from './pages/Publico'; // Importação default
 import Grupo from './pages/Grupo';
 import Peças from './pages/Pecas';
 import Beneficios from './pages/Beneficios'
+import Botao from "./pages/Botao"
 
 
 import { theme } from './styles/theme';
@@ -15,8 +16,12 @@ import { GlobalStyle } from './styles/global';
 
 const router = createBrowserRouter([
   {
+    path: 'bu',
+    element: <Botao />,
+  },
+  {
     path: '/',
-    element: <Landing />,
+    element: < Landing />,
   },
   {
     path: '/publi',

@@ -11,17 +11,6 @@ import OtimizacaoEspaco from "../assets/ImgBeneficios/OtimizacaoEspaco.png";
 function Beneficios() {
 
 
-  const button = document.getElementById("button");
-
-    button.addEventListener('mousemove', (e) => {
-    x = e.offsetX;
-    y = e.offsetY;
-    button.style.setProperty('--mouse-x', x + "px");
-    button.style.setProperty('--mouse-y', y + "px");
-  });
-
-
-
   return (
     <CardsBeneficios>
       <h2>Benefícios</h2>
@@ -35,7 +24,7 @@ function Beneficios() {
       <div className="div-button-cima">
       <button className="Button"><a href="">Saiba mais</a></button>
       <button className="Button"><a href="">Saiba mais</a></button>
-      <button className="Button"><a href="">Saiba mais</a></button>
+      <button className="Button">Saiba mais</button>
       </div>
 
       <div className="Parte-de-Baixo">
