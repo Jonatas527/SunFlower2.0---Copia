@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,34 +9,60 @@ const Container = styled.div`
   background: ${props => props.theme.HomeCorFundo};
   color: #fff;
   font-family: Arial, sans-serif;
-`;
-
-const Title = styled.h1`
+  .title {
   font-size: 2em;
   margin-bottom: 40px;
-`;
+}
 
-const TargetGroup = styled.div`
+.target-group {
   display: flex;
   flex-direction: column;
   gap: 20px;
-`;
+}
 
-const Group = styled.div`
+.group {
+  background-color: #1b2a3a;
+  padding:20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.group-title {
+  color: #7cb3fc;
+  margin-bottom: 8px;
+}
+
+.group-text {
+  color: #e2e8f0;
+  margin: 0;
+}
+@media  (max-width: 730px){
+  .target-group {
+    padding: 0 15px; /* Padding menor para dispositivos pequenos */
+  }
+
+
+.group {
   background-color: #1b2a3a;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-`;
+  margin: 0  auto; /* Centraliza o grupo */
+  max-width: 95%; /* Limita a largura máxima */
+}
 
-const GroupTitle = styled.h2`
+.group-title {
   color: #7cb3fc;
   margin-bottom: 10px;
-`;
+}
 
-const GroupText = styled.p`
+.group-text {
   color: #e2e8f0;
   margin: 0;
+}
+
+}
 `;
 
-export { Container, Title, TargetGroup, Group, GroupTitle, GroupText };
+
+

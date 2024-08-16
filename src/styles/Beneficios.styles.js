@@ -1,41 +1,43 @@
-
 import styled from "styled-components";
-
 
 export const CardsBeneficios = styled.div`
 
-h2{
+  h2 {
     display: flex;
     justify-content: center;
     color: #ffff;
     font-size: 40px;
     padding-top: 20px;
-}
+  }
 
-.Parte-de-Cima,.Parte-de-Baixo {
+  .Parte-de-Cima, .Parte-de-Baixo {
     display: flex;
     justify-content: center;
     padding-top: 40px;
     gap: 30px;
-}
+  }
 
-.div-button-cima{
+  .div-button-cima {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     gap: 169px;
-}
+  }
 
-.div-button-baixo{
+  .div-button-baixo {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap:169px;
+    gap: 169px;
+  }
 
-}
+  a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor herdada */
+  }
+`;
 
-.button{
-  button {
+export const Botao = styled.button`
   --color: #0077ff;
   font-family: inherit;
   display: inline-block;
@@ -51,32 +53,29 @@ h2{
   border: 2px solid var(--color);
   border-radius: 6px;
   position: relative;
-}
 
-.button::before {
-  position: absolute;
-  content: "";
-  background: var(--color);
-  width: 150px;
-  height: 200px;
-  z-index: -1;
-  border-radius: 50%;
-}
+  &::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
 
-.button:hover {
-  color: white;
-}
+  &:hover {
+    color: white;
+  }
 
-.button:before {
-  top: 100%;
-  left: 100%;
-  transition: 0.3s all;
-}
+  &:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+  }
 
-.button:hover::before {
-  top: -30px;
-  left: -30px;
-}
-}
-
-`
+  &:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+`;

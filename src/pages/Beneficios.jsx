@@ -6,13 +6,14 @@ import { CardsBeneficios } from "../styles/Beneficios.styles";
 import TecAdaptativa from "../assets/ImgBeneficios/TecAdaptativa.png";
 import OtimizacaoEspaco from "../assets/ImgBeneficios/OtimizacaoEspaco.png";
 
+import { Botao } from "../styles/Beneficios.styles";
 
 
 function Beneficios() {
 
 
   return (
-    <CardsBeneficios>
+    <CardsBeneficios id="Beneficios">
       <h2>Benefícios</h2>
 
       <div className="Parte-de-Cima">
@@ -22,9 +23,9 @@ function Beneficios() {
       </div>
 
       <div className="div-button-cima">
-      <button className="Button"><a href="">Saiba mais</a></button>
-      <button className="Button"><a href="">Saiba mais</a></button>
-      <button className="Button">Saiba mais</button>
+        <Botao><a href="">Saiba mais</a></Botao>
+        <Botao><a href="">Saiba mais</a></Botao>
+        <Botao><a href="">Saiba mais</a></Botao>
       </div>
 
       <div className="Parte-de-Baixo">
@@ -33,11 +34,9 @@ function Beneficios() {
       </div>
 
       <div className="div-button-baixo">
-      <button className="Button"><a href="">Saiba mais</a></button>
-      <button className="Button"><a href="">Saiba mais</a></button>
+        <Botao><a href="">Saiba mais</a></Botao>
+        <Botao><a href="">Saiba mais</a></Botao>
       </div>
-
-
     </CardsBeneficios>
 
   )
