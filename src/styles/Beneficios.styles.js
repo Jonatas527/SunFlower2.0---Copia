@@ -10,25 +10,52 @@ export const CardsBeneficios = styled.div`
     padding-top: 20px;
   }
 
+  img{
+    width: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  img:hover{
+    transform: translateY(-10px);
+  }
+
+  .Titulo-cima{
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+    gap: 80px;
+    margin-top: 30px;
+    
+  }
+
   .Parte-de-Cima, .Parte-de-Baixo {
     display: flex;
     justify-content: center;
-    padding-top: 40px;
-    gap: 30px;
+    padding-top: 30px;
+    gap: 40px;
   }
 
   .div-button-cima {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    gap: 169px;
+    margin-top: 5px;
+    gap: 100px;
   }
 
   .div-button-baixo {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    gap: 169px;
+    margin-top: 5px;
+    gap: 100px;
+  }
+
+  .Titulo-baixo{
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+    gap: 60px;
+    margin-top: 30px;
   }
 
   a {

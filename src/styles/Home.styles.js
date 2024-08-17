@@ -50,7 +50,7 @@ export const Conteudo = styled.div`
     border: none; /* Sem borda */
   }
   .nav-link:hover {
-    color:  #45a049;
+    color:  #666060;
   }
 
 
@@ -157,4 +157,4 @@ export const Video = styled.div`
     }
   }
 `
-
+  

@@ -6,7 +6,7 @@ import { CardsBeneficios } from "../styles/Beneficios.styles";
 import TecAdaptativa from "../assets/ImgBeneficios/TecAdaptativa.png";
 import OtimizacaoEspaco from "../assets/ImgBeneficios/OtimizacaoEspaco.png";
 
-import { Botao } from "../styles/Beneficios.styles";
+
 
 
 function Beneficios() {
@@ -15,6 +15,12 @@ function Beneficios() {
   return (
     <CardsBeneficios id="Beneficios">
       <h2>Benefícios</h2>
+ 
+      <div className="Titulo-cima">
+          <h3>Melhor desempenho</h3>
+          <h3>Maior eficiência </h3>
+          <h3>Produção de energia</h3>
+      </div>
 
       <div className="Parte-de-Cima">
         <section><img src={MelhorDesempenho} alt="Imagem de melhor desempeho" /></section>
@@ -22,10 +28,9 @@ function Beneficios() {
         <section><img src={ProducaoEnergia} alt="Imagem de Produção de Energia" /></section>
       </div>
 
-      <div className="div-button-cima">
-        <Botao><a href="">Saiba mais</a></Botao>
-        <Botao><a href="">Saiba mais</a></Botao>
-        <Botao><a href="">Saiba mais</a></Botao>
+      <div className="Titulo-baixo">
+          <h3>Tecnologia adaptativa</h3>
+          <h3>Otimização de espaço</h3>
       </div>
 
       <div className="Parte-de-Baixo">
@@ -33,10 +38,7 @@ function Beneficios() {
         <section><img src={OtimizacaoEspaco} alt="Imagem Otimização de Espaço" /></section>
       </div>
 
-      <div className="div-button-baixo">
-        <Botao><a href="">Saiba mais</a></Botao>
-        <Botao><a href="">Saiba mais</a></Botao>
-      </div>
+      
     </CardsBeneficios>
 
   )

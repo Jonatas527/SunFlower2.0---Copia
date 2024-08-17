@@ -10,6 +10,8 @@ import Beneficios from './pages/Beneficios'
 
 
 
+
+
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
@@ -36,6 +38,8 @@ const router = createBrowserRouter([
     path: '/bene',
     element: <Beneficios />,
   },
+
+  
 
 ]);
 

@@ -20,7 +20,7 @@ export const Carrossel = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 40px;
-    padding-top: 25px;
+    padding-top: 70px;
   }
 
   @media (max-width: 730px) {

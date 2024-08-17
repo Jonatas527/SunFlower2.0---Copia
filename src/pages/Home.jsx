@@ -30,8 +30,8 @@ export function Home() {
             <ul>
               <li className="nav-item"><a href="#" className="nav-link">Home</a></li>
               <li className="nav-item"><a href="#publico" className="nav-link">Público-alvo</a></li>
-              <li className="nav-item"><a href="#Carrossel" className="nav-link">Peças</a></li>
               <li className="nav-item"><a href="#Beneficios" className="nav-link">Benefícios</a></li>
+              <li className="nav-item"><a href="#Carrossel" className="nav-link">Peças</a></li> 
               <li className="nav-item"><Link to="/grup" className="nav-link">Grupo</Link></li>
             </ul>
           </div>
