@@ -24,7 +24,7 @@ export const CardsBeneficios = styled.div`
     display: flex;
     justify-content: center;
     color: #ffff;
-    gap: 80px;
+    gap: 100px;
     margin-top: 30px;
     
   }

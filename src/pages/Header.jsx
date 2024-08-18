@@ -1,21 +1,60 @@
-import { HeaderHome } from "../styles/Home.styles";
+import { Header } from "../styles/Home.styles";
 import logoImg from "../assets/logoSunflower.png";
 
-export default function Header() {
+
+
+import closeIcon from "../assets/icones/menuMobile/close.png";  
+import menuOpenIcon from "../assets/icones/menuMobile/menuOpen.png"; 
+import { Link } from 'react-router-dom';
+
+export  function PHeader() {
+  const menuShow = () => {
+    const menuMobile = document.querySelector('.mobile-menu');
+    const icon = document.querySelector('.icon');
+    if (menuMobile.classList.contains('open')) {
+      menuMobile.classList.remove('open');
+      icon.src = menuOpenIcon;  
+    } else {
+      menuMobile.classList.add('open');
+      icon.src = closeIcon ;  
+    }
+  };
+
+
+
   return (
-    <HeaderHome>
+    <Header>
       <header>
-        <nav>
-          <img src={logoImg} className="logo" alt="Logo da SunFlower" />
-          <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Público-alvo</li></a>
-            <a href="#"><li>Benefícios</li></a>
-            <a href="#"><li>Peças</li></a>
-            <a href="#"><li>Grupo</li></a>
-          </ul>
+        <nav className="nav-bar">
+          <div className="logo">
+            <img src={logoImg} alt="Logo da SunFlower" />
+          </div>
+          <div className="nav-list">
+            <ul>
+              <li className="nav-item"><a href="#" className="nav-link">Home</a></li>
+              <li className="nav-item"><a href="#publico" className="nav-link">Público-alvo</a></li>
+              <li className="nav-item"><a href="#Beneficios" className="nav-link">Benefícios</a></li>
+              <li className="nav-item"><a href="#Carrossel" className="nav-link">Peças</a></li>
+              <li className="nav-item"><Link to="/grup" className="nav-link">Grupo</Link></li>
+            </ul>
+          </div>
+
+          <div className="mobile-menu-icon">
+            <button onClick={menuShow}><img className="icon" src={menuOpenIcon} alt="Menu Icon" /></button>
+          </div>
         </nav>
+        <div className="mobile-menu">
+          <ul>
+            <li className="nav-item"><a href="#" className="nav-link">Home</a></li>
+            <li className="nav-item"><a href="#publico" className="nav-link">Público-alvo</a></li>
+            <li className="nav-item"><a href="#Carrossel" className="nav-link">Peças</a></li>
+            <li className="nav-item"><a href="#Beneficios" className="nav-link">Benefícios</a></li>
+            <li className="nav-item"><Link to="/grup" className="nav-link">Grupo</Link></li>
+          </ul>
+
+        </div>
       </header>
-  </HeaderHome>
+
+    </Header>
   )
 }

@@ -1,7 +1,7 @@
 import { Home } from './Home';
 import Publico from './Publico';
 import Beneficios from './Beneficios';
-//import Beneficio from './Beneficios';
+
 
 import Pecas from './Pecas';
 

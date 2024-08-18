@@ -6,6 +6,8 @@ import { CardsBeneficios } from "../styles/Beneficios.styles";
 import TecAdaptativa from "../assets/ImgBeneficios/TecAdaptativa.png";
 import OtimizacaoEspaco from "../assets/ImgBeneficios/OtimizacaoEspaco.png";
 
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -23,9 +25,9 @@ function Beneficios() {
       </div>
 
       <div className="Parte-de-Cima">
-        <section><img src={MelhorDesempenho} alt="Imagem de melhor desempeho" /></section>
-        <section><img src={MaiorEficiencia} alt="Imagem de Maior eficiência" /></section>
-        <section><img src={ProducaoEnergia} alt="Imagem de Produção de Energia" /></section>
+        <Link to="/md "><img src={MelhorDesempenho} alt="Imagem de melhor desempeho" /></Link>
+        <Link to="/me"><img src={MaiorEficiencia} alt="Imagem de Maior eficiência" /></Link>
+        <Link to="/pe"><img src={ProducaoEnergia} alt="Imagem de Produção de Energia" /></Link>
       </div>
 
       <div className="Titulo-baixo">
@@ -34,10 +36,11 @@ function Beneficios() {
       </div>
 
       <div className="Parte-de-Baixo">
-        <section><img src={TecAdaptativa} alt=" Imagem Tecnologia Adaptativa" /></section>
-        <section><img src={OtimizacaoEspaco} alt="Imagem Otimização de Espaço" /></section>
+        <Link to="/te"><img src={TecAdaptativa} alt=" Imagem Tecnologia Adaptativa" /></Link>
+        <Link to="/ot"><img src={OtimizacaoEspaco} alt="Imagem Otimização de Espaço" /></Link>
       </div>
 
+    
       
     </CardsBeneficios>
 
