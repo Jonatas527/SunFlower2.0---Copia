@@ -17,6 +17,11 @@ export const CardsBeneficios = styled.div`
     margin-top: 30px;
   }
 
+  .Titulo-baixo, .Titulo-cima{
+    margin-bottom: 80px;
+  }
+  
+
   .TitleWrapper {
     position: relative;
     width: 300px;
@@ -63,6 +68,7 @@ export const CardsBeneficios = styled.div`
 
     .TitleWrapper img {
       width: 100%;
+
     }
   }
 
@@ -70,13 +76,14 @@ export const CardsBeneficios = styled.div`
     h2 {
       font-size: 24px;
     }
-
+  
+  
     .TitleWrapper {
       width: 150px;
     }
 
     .TitleWrapper h3 {
-      font-size: 14px;
+      font-size: 13.5px;
       margin-bottom: 2px; 
     }
 

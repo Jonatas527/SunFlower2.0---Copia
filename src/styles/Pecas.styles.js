@@ -26,7 +26,7 @@ export const Carrossel = styled.div`
   @media (max-width: 730px) {
     .Carrossel {
       width: 100%; 
-      max-width: 400px; 
+      max-width: 350px; 
       margin: 30px auto 0 auto; 
       padding: 0 10px; 
     }

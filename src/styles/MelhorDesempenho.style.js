@@ -4,7 +4,8 @@ export const PageMelhorDesempenho = styled.div`
   main {
     display: flex;
     align-items: center;
-    padding-top: 50px;
+    justify-content: center;
+    padding-top: 15%;
     flex-direction: row; 
   }
 

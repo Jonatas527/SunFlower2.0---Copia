@@ -28,7 +28,7 @@ export function Home() {
           </div>
           <div className="nav-list">
             <ul>
-              <li className="nav-item"><a href="#" className="nav-link">Home</a></li>
+        
               <li className="nav-item"><a href="#publico" className="nav-link">Público-alvo</a></li>
               <li className="nav-item"><a href="#Beneficios" className="nav-link">Benefícios</a></li>
               <li className="nav-item"><a href="#Carrossel" className="nav-link">Peças</a></li> 
@@ -42,7 +42,7 @@ export function Home() {
         </nav>
         <div className="mobile-menu">
           <ul>
-            <li className="nav-item"><a href="#" className="nav-link">Home</a></li>
+            
             <li className="nav-item"><a href="#publico" className="nav-link">Público-alvo</a></li>
             <li className="nav-item"><a href="#Carrossel" className="nav-link">Peças</a></li>
             <li className="nav-item"><a href="#Beneficios" className="nav-link">Benefícios</a></li>

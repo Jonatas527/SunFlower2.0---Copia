@@ -12,10 +12,12 @@ export const Conteudo = styled.div`
     box-shadow: 0px 3px 10px #464646; 
   }
 
+   
   .nav-bar img {
     padding: 0;
     height: 65px; 
     width: auto;
+    margin-left:10px;
   }
 
   .nav-bar {
@@ -38,7 +40,8 @@ export const Conteudo = styled.div`
   }
 
   .nav-item {
-    margin: 0 15px; /* Margem dos itens do menu */
+    margin: 0 15px;  /* Margem dos itens do menu */
+    margin-right: 40px;
   }
 
   .nav-link {
