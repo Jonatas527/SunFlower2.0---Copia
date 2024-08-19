@@ -5,44 +5,94 @@ export const PageMelhorDesempenho = styled.div`
     display: flex;
     align-items: center;
     padding-top: 50px;
+    flex-direction: row; 
   }
 
   .Div-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  width: 800px;
-  margin-left: 50px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    margin-right: 50px; 
+  }
 
-.Div-text h2 {
-  color: #ffffff;
-  padding-bottom: 20px;
-  font-size: 40px;
-}
+  .Div-text h2 {
+    color: #ffffff;
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: center; 
+    width: 100%; 
+  }
 
-.Div-text p {
-  text-align: justify;
-  color: #ffffff;
-  background-color: rgba(9, 39, 74, 0.29);
-  border-radius: 20px;
-  width: auto; 
-  font-size: 20px;
-  padding: 10px;
-  margin-top: 20px; 
-  margin-right: 30px;
-}
-
+  .Div-text p {
+    text-align: justify;
+    color: #ffffff;
+    background-color: rgba(9, 39, 74, 0.29);
+    border-radius: 20px;
+    width: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+  }
 
   .img {
-    margin-right: 50px;
+    margin-right: 50px; 
   }
 
   img {
-    max-width: 100%;
+    max-width: 80%; 
     height: auto;
     border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column; 
+      align-items: center;
+    }
+
+    .Div-text {
+      width: 100%;
+      margin-right: 0;
+      padding: 0 20px;
+    }
+
+    .Div-text h2 {
+      font-size: 30px;
+    }
+
+    .Div-text p {
+      font-size: 18px;
+    }
+
+    .img {
+      margin-top: 20px; 
+      margin-left: 20px; 
+    }
+
+    img {
+      max-width: 80%; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .Div-text h2 {
+      font-size: 24px;
+    }
+
+    .Div-text p {
+      font-size: 16px;
+    }
+
+    .img {
+      margin-top: 20px; 
+      margin-left: 60px; 
+    }
+
+    img {
+      max-width: 90%; 
+    }
   }
 `;
 
@@ -141,5 +191,19 @@ export const StyledButton = styled.button`
   &:active span:nth-child(4) {
     transition: none;
     transition-delay: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.8em 1.5em;
+    font-size: 14px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.6em 1.2em;
+    font-size: 12px;
+    bottom: 10px;
+    right: 10px;
   }
 `;

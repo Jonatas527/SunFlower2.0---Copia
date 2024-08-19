@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const CardsBeneficios = styled.div`
-
   h2 {
     display: flex;
     justify-content: center;
@@ -10,99 +9,79 @@ export const CardsBeneficios = styled.div`
     padding-top: 20px;
   }
 
-  img{
+  .Titulo-cima, .Titulo-baixo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .TitleWrapper {
+    position: relative;
+    width: 300px; /* Ajuste conforme necessário */
+    height: 200px; /* Ajuste conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .TitleWrapper h3 {
+    margin-bottom: 10px; /* Espaço entre o título e a imagem */
+    color: #ffff;
+    font-size: 20px; /* Ajuste conforme necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .TitleWrapper img {
     width: 100%;
+    height: auto; /* Ajusta a altura para manter a proporção */
     transition: transform 0.3s ease;
     cursor: pointer;
   }
 
-  img:hover{
+  .TitleWrapper img:hover {
     transform: translateY(-10px);
   }
 
-  .Titulo-cima{
-    display: flex;
-    justify-content: center;
-    color: #ffff;
-    gap: 100px;
-    margin-top: 30px;
-    
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 30px;
+    }
+
+    .TitleWrapper {
+      width: 200px;
+      height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .TitleWrapper h3 {
+      font-size: 16px;
+      margin-bottom: 5px; /* Ajusta o espaço entre o título e a imagem */
+    }
+
+    .TitleWrapper img {
+      width: 100%;
+    }
   }
 
-  .Parte-de-Cima, .Parte-de-Baixo {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    gap: 40px;
-  }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 24px;
+    }
 
-  .div-button-cima {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    gap: 100px;
-  }
+    .TitleWrapper {
+      width: 150px;
+    }
 
-  .div-button-baixo {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    gap: 100px;
-  }
+    .TitleWrapper h3 {
+      font-size: 14px;
+      margin-bottom: 2px; /* Ajusta o espaço entre o título e a imagem */
+    }
 
-  .Titulo-baixo{
-    display: flex;
-    justify-content: center;
-    color: #ffff;
-    gap: 60px;
-    margin-top: 30px;
-  }
-
-  a {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: inherit; /* Mantém a cor herdada */
-  }
-`;
-
-export const Botao = styled.button`
-  --color: #0077ff;
-  font-family: inherit;
-  display: inline-block;
-  width: 6em;
-  height: 2.6em;
-  line-height: 2.5em;
-  overflow: hidden;
-  cursor: pointer;
-  margin: 20px;
-  font-size: 17px;
-  z-index: 1;
-  color: var(--color);
-  border: 2px solid var(--color);
-  border-radius: 6px;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background: var(--color);
-    width: 150px;
-    height: 200px;
-    z-index: -1;
-    border-radius: 50%;
-  }
-
-  &:hover {
-    color: white;
-  }
-
-  &:before {
-    top: 100%;
-    left: 100%;
-    transition: 0.3s all;
-  }
-
-  &:hover::before {
-    top: -30px;
-    left: -30px;
+    .TitleWrapper img {
+      width: 100%;
+    }
   }
 `;

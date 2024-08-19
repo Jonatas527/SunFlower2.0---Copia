@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Integrantes = styled.div`
   position: relative;
@@ -9,7 +9,7 @@ export const Integrantes = styled.div`
   justify-content: center;
   flex-direction: column;
 
-  .home {
+  .background {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,11 +20,10 @@ export const Integrantes = styled.div`
     z-index: -1;
   }
 
-  .title{
-
-    padding-bottom:20px;
+  .title {
+    padding-bottom: 20px;
     font-size: 40px;
-    color:#DFDEFF ;
+    color: #DFDEFF;
     margin: 0 auto;
     max-width: 800px;
   }
@@ -37,51 +36,52 @@ export const Integrantes = styled.div`
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    
   }
 
   .integrantes {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; 
-    gap: 20px; 
+    flex-wrap: wrap;
+    gap: 15px; /* Ajuste do espaçamento entre os integrantes */
   }
 
   .integrante {
-    flex: 1 1 300px; 
-    max-width: 300px;
+    flex: 1 1 250px; /* Ajusta a largura base da div */
+    max-width: 250px; /* Ajusta a largura máxima da div */
     background-color: #f9f9f9;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px; /* Ajusta o padding da div */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin: 10px; /* Ajusta a margem para evitar que os itens fiquem muito grudados */
   }
 
   .integrante img {
     width: 100%;
+    max-width: 180px; /* Ajusta o tamanho máximo da imagem */
     height: auto;
     margin-bottom: 15px;
     transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave */
   }
-  
-.social-links img:hover {
+
+  .social-links img:hover {
     transform: scale(1.1); /* Aumenta o tamanho dos ícones ao passar o mouse */
     filter: brightness(1.2); /* Aumenta o brilho dos ícones ao passar o mouse */
-}
+  }
+
   .integrante h3 {
     margin-bottom: 10px;
-    font-size: 1.5em;
+    font-size: 1.3em; /* Ajusta o tamanho da fonte do nome */
   }
 
   .social-links {
     display: flex;
     justify-content: center;
     gap: 10px;
-    
   }
 
   .social-links a {
-    font-size: 1.2em;
+    font-size: 1em; /* Ajusta o tamanho da fonte dos ícones sociais */
     color: #555;
     transition: color 0.3s;
   }
@@ -90,36 +90,59 @@ export const Integrantes = styled.div`
     color: #000;
   }
 
-  
-  .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
+  @media (max-width: 768px) {
+    .title {
+      font-size: 28px;
+    }
+
+    .integrante {
+      flex: 1 1 200px; /* Ajusta a largura base da div para telas menores */
+      max-width: 200px; /* Ajusta a largura máxima da div para telas menores */
+      padding: 10px; /* Ajusta o padding da div */
+    }
+
+    .integrante img {
+      max-width: 140px; /* Ajusta o tamanho máximo da imagem em telas menores */
+    }
+
+    .integrante h3 {
+      font-size: 1.2em; /* Ajusta o tamanho da fonte do nome */
+    }
+
+    .social-links img {
+      width: 18px; /* Ajusta o tamanho dos ícones sociais */
+      height: 18px;
+    }
   }
 
-   .container {
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    border-radius: 70px;
+  @media (max-width: 480px) {
+    .title {
+      font-size: 24px;
+    }
+
+    .integrante {
+      flex: 1 1 100%;
+      max-width: 45%;
+      padding: 8px; /* Ajusta o padding da div */
+      margin: 10px auto; /* Ajusta a margem para dispositivos móveis */
+    }
+
+    .integrante img {
+      max-width: 97px; /* Ajusta o tamanho máximo da imagem em telas pequenas */
+    }
+
+    .integrante h3 {
+      font-size: 1.5rem; /* Ajusta o tamanho da fonte do nome */
+    }
+
+    .social-links img {
+      width: 26px; /* Ajusta o tamanho dos ícones sociais */
+      height: 26px;
+    }
   }
-  
- .radius{
-  border-radius: 5px;
- }
-`
+`;
 
 export const StyledButton = styled.button`
-
-  
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -215,5 +238,18 @@ export const StyledButton = styled.button`
     transition: none;
     transition-delay: none;
   }
-`;
 
+  @media (max-width: 768px) {
+    padding: 0.8em 1.5em;
+    font-size: 14px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.6em 1.2em;
+    font-size: 12px;
+    bottom: 10px;
+    right: 10px;
+  }
+`;
