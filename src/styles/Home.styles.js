@@ -125,13 +125,13 @@ export const Conteudo = styled.div`
 
     .home h1 {
       margin: 0 auto;
-      font-size: 2.2rem /* Ajusta o tamanho da fonte no mobile */
+      font-size: 2.2rem 
     }
 
     .home p {
       margin: 0 auto;
-      font-size: 1.7rem; /* Ajusta o tamanho da fonte no mobile */
-      max-width: 100%; /* Faz o parágrafo ocupar toda a largura disponível */
+      font-size: 1.7rem; 
+      max-width: 100%;
     }
   }
 `
@@ -153,7 +153,7 @@ export const Video = styled.div`
     .short-video iframe {
       width: 100%;
       height: auto;
-      max-width: 300px; //Ajusta a largura máxima do vídeo no mobile 
+      max-width: 300px; 
     }
   }
 `

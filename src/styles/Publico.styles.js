@@ -38,7 +38,7 @@ export const Container = styled.div`
 }
 @media  (max-width: 730px){
   .target-group {
-    padding: 0 15px; /* Padding menor para dispositivos pequenos */
+    padding: 0 15px; 
   }
 
 
@@ -47,8 +47,8 @@ export const Container = styled.div`
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  margin: 0  auto; /* Centraliza o grupo */
-  max-width: 95%; /* Limita a largura máxima */
+  margin: 0  auto; 
+  max-width: 95%; 
 }
 
 .group-title {

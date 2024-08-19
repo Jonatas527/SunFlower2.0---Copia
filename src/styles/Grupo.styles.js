@@ -42,36 +42,36 @@ export const Integrantes = styled.div`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 15px; /* Ajuste do espaçamento entre os integrantes */
+    gap: 15px; 
   }
 
   .integrante {
-    flex: 1 1 250px; /* Ajusta a largura base da div */
-    max-width: 250px; /* Ajusta a largura máxima da div */
+    flex: 1 1 250px; 
+    max-width: 250px; 
     background-color: #f9f9f9;
     border-radius: 10px;
-    padding: 15px; /* Ajusta o padding da div */
+    padding: 15px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 10px; /* Ajusta a margem para evitar que os itens fiquem muito grudados */
+    margin: 10px; 
   }
 
   .integrante img {
     width: 100%;
-    max-width: 180px; /* Ajusta o tamanho máximo da imagem */
+    max-width: 180px; 
     height: auto;
     margin-bottom: 15px;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave */
+    transition: transform 0.3s ease, filter 0.3s ease; 
   }
 
   .social-links img:hover {
-    transform: scale(1.1); /* Aumenta o tamanho dos ícones ao passar o mouse */
-    filter: brightness(1.2); /* Aumenta o brilho dos ícones ao passar o mouse */
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
   }
 
   .integrante h3 {
     margin-bottom: 10px;
-    font-size: 1.3em; /* Ajusta o tamanho da fonte do nome */
+    font-size: 1.3em; 
   }
 
   .social-links {
@@ -81,7 +81,7 @@ export const Integrantes = styled.div`
   }
 
   .social-links a {
-    font-size: 1em; /* Ajusta o tamanho da fonte dos ícones sociais */
+    font-size: 1em; 
     color: #555;
     transition: color 0.3s;
   }
@@ -96,21 +96,21 @@ export const Integrantes = styled.div`
     }
 
     .integrante {
-      flex: 1 1 200px; /* Ajusta a largura base da div para telas menores */
-      max-width: 200px; /* Ajusta a largura máxima da div para telas menores */
-      padding: 10px; /* Ajusta o padding da div */
+      flex: 1 1 200px; 
+      max-width: 200px; 
+      padding: 10px;
     }
 
     .integrante img {
-      max-width: 140px; /* Ajusta o tamanho máximo da imagem em telas menores */
+      max-width: 140px; 
     }
 
     .integrante h3 {
-      font-size: 1.2em; /* Ajusta o tamanho da fonte do nome */
+      font-size: 1.2em;
     }
 
     .social-links img {
-      width: 18px; /* Ajusta o tamanho dos ícones sociais */
+      width: 18px; 
       height: 18px;
     }
   }
@@ -123,20 +123,20 @@ export const Integrantes = styled.div`
     .integrante {
       flex: 1 1 100%;
       max-width: 45%;
-      padding: 8px; /* Ajusta o padding da div */
-      margin: 10px auto; /* Ajusta a margem para dispositivos móveis */
+      padding: 8px;
+      margin: 10px auto; 
     }
 
     .integrante img {
-      max-width: 97px; /* Ajusta o tamanho máximo da imagem em telas pequenas */
+      max-width: 97px; 
     }
 
     .integrante h3 {
-      font-size: 1.5rem; /* Ajusta o tamanho da fonte do nome */
+      font-size: 1.5rem; 
     }
 
     .social-links img {
-      width: 26px; /* Ajusta o tamanho dos ícones sociais */
+      width: 26px; 
       height: 26px;
     }
   }

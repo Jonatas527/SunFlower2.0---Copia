@@ -40,16 +40,16 @@ export const Header = styled.div`
   }
 
   .nav-item {
-    margin: 0 15px; /* Margem dos itens do menu */
+    margin: 0 15px;
   }
 
   .nav-link {
     text-decoration: none;
-    font-size: 20px; /* Tamanho da fonte dos links do menu */
-    color: #fff; /* Cor dos links do menu */
+    font-size: 20px; 
+    color: #fff; 
     font-weight: 400;
-    cursor: pointer; /* Cursor de ponteiro */
-    border: none; /* Sem borda */
+    cursor: pointer; 
+    border: none;
   }
   .nav-link:hover {
     color:  #666060;
@@ -67,7 +67,7 @@ export const Header = styled.div`
 
   @media screen and (max-width: 730px) {
     .nav-bar {
-      padding: 1.5rem 2rem; /* Ajusta o padding para telas menores */
+      padding: 1.5rem 2rem; 
     }
     .nav-item {
       display: none;

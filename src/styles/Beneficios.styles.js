@@ -19,25 +19,25 @@ export const CardsBeneficios = styled.div`
 
   .TitleWrapper {
     position: relative;
-    width: 300px; /* Ajuste conforme necessário */
-    height: 200px; /* Ajuste conforme necessário */
+    width: 300px;
+    height: 200px; 
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .TitleWrapper h3 {
-    margin-bottom: 10px; /* Espaço entre o título e a imagem */
+    margin-bottom: 10px;
     color: #ffff;
-    font-size: 20px; /* Ajuste conforme necessário */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
+    font-size: 20px; 
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     border-radius: 5px;
   }
 
   .TitleWrapper img {
     width: 100%;
-    height: auto; /* Ajusta a altura para manter a proporção */
+    height: auto; 
     transition: transform 0.3s ease;
     cursor: pointer;
   }
@@ -53,12 +53,12 @@ export const CardsBeneficios = styled.div`
 
     .TitleWrapper {
       width: 200px;
-      height: auto; /* Ajusta a altura automaticamente */
+      height: auto; 
     }
 
     .TitleWrapper h3 {
       font-size: 16px;
-      margin-bottom: 5px; /* Ajusta o espaço entre o título e a imagem */
+      margin-bottom: 5px; 
     }
 
     .TitleWrapper img {
@@ -77,7 +77,7 @@ export const CardsBeneficios = styled.div`
 
     .TitleWrapper h3 {
       font-size: 14px;
-      margin-bottom: 2px; /* Ajusta o espaço entre o título e a imagem */
+      margin-bottom: 2px; 
     }
 
     .TitleWrapper img {
