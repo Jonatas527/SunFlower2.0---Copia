@@ -51,7 +51,7 @@ export default function PHeader() {
               </li>
               <li className="nav-item">
                 {window.location.pathname != '/' ? (
-                <a href="/" className="nav-link">Grupo</a>
+                <a href="/grup" className="nav-link">Grupo</a>
               ) : ( <a href="/grup" className="nav-link">Grupo</a>)} 
               </li>
               
