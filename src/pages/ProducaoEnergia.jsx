@@ -5,10 +5,12 @@ import { StyledButton } from '../styles/MelhorDesempenho.style'
 import ProdEnergia from "../assets/ImgBenePage/ProducaoEnergiaPageIMG.png";
 
 import { Link } from 'react-router-dom';
+import PHeader from "./Header";
 
 export default function Melhoreficiencia() {
   return (
     <PageMelhorDesempenho>
+      <PHeader />
 
       <main>
 

@@ -5,10 +5,12 @@ import { StyledButton } from '../styles/MelhorDesempenho.style'
 import Otimizacao from "../assets/ImgBenePage/OtimizacaoEspacoPageIMG.png";
 
 import { Link } from 'react-router-dom';
+import PHeader from "./Header";
 
 export default function Otimizaçao() {
   return (
     <PageMelhorDesempenho>
+      <PHeader />
 
       <main>
 
