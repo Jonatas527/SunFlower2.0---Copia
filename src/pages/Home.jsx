@@ -25,8 +25,8 @@ const ShortVideo = () => {
     <Video>
       <div className="short-video">
         <iframe
-          width="660"
-          height="350"
+          width="750"
+          height="420"
           src="https://www.youtube.com/embed/BadB1z-V_qU?si=FBkYkarDLO4dFwwH"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
