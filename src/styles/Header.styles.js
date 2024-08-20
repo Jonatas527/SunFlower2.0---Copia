@@ -14,10 +14,12 @@ export const Header = styled.div`
     box-shadow: 0px 3px 10px #464646; 
   }
 
+   
   .nav-bar img {
     padding: 0;
     height: 65px; 
     width: auto;
+    margin-left:10px;
   }
 
   .nav-bar {
@@ -40,16 +42,17 @@ export const Header = styled.div`
   }
 
   .nav-item {
-    margin: 0 15px;
+    margin: 0 15px;  /* Margem dos itens do menu */
+    margin-right: 40px;
   }
 
   .nav-link {
     text-decoration: none;
-    font-size: 20px; 
-    color: #fff; 
+    font-size: 20px; /* Tamanho da fonte dos links do menu */
+    color: #fff; /* Cor dos links do menu */
     font-weight: 400;
-    cursor: pointer; 
-    border: none;
+    cursor: pointer; /* Cursor de ponteiro */
+    border: none; /* Sem borda */
   }
   .nav-link:hover {
     color:  #666060;

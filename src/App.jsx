@@ -12,6 +12,7 @@ import  MaiorEficiencia from './pages/MaiorEficiencia';
 import ProduçaoEnergia from './pages/ProducaoEnergia'
 import Tecnologia from './pages/TecAdaptativa'
 import  Otimizacao  from './pages/OtimizacaoEspaco'
+import Header from './pages/Header'
 
 
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: < Landing />,
+  },
+  {
+    path: '/header',
+    element: <Header />,
   },
   {
     path: '/publi',

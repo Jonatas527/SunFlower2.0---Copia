@@ -6,10 +6,12 @@ import ImgMlrDesempenho from "../assets/ImgBenePage/MelhorDesempenhoPageIMG.png"
 
 import { Link } from 'react-router-dom';
 
+
 export function MelhorDesempenho() {
   return (
+    
     <PageMelhorDesempenho>
-
+      
       <main>
 
         <div className="Div-text">

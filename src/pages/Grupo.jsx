@@ -16,7 +16,9 @@ import { Link } from 'react-router-dom';
 
 export function Grupo() {
     return (
+
         <Integrantes id='integrantes'>
+            
             <div className="background" style={{ backgroundImage: `url(${fundoG})` }}></div>
             <h2 className="title">Integrantes:</h2>
             <div className="container">
