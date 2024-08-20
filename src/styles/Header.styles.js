@@ -11,7 +11,7 @@ export const Header = styled.div`
 
   header {
     background-color: #00040D; 
-    box-shadow: 0px 3px 10px #464646; 
+    
   }
 
    

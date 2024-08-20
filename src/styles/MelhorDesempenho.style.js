@@ -103,7 +103,7 @@ export const StyledButton = styled.button`
   right: 20px;
   padding: 1em 1.8em;
   outline: none;
-  border: 1px solid #303030;
+  
   background: #212121;
   color: #00aaff;
   text-transform: uppercase;
@@ -181,7 +181,7 @@ export const StyledButton = styled.button`
 
   &:active {
     background: linear-gradient(to top right, #00aaff, #001eff);
-    color: #bfbfbf;
+    
     box-shadow: 0 0 8px #00aaff, 0 0 8px #001eff, 0 0 8px #00aaff;
     transition: 0.1s;
   }
