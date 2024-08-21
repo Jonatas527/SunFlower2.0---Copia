@@ -19,6 +19,9 @@ export const Integrantes = styled.div`
     background-position: center;
     z-index: -1;
   }
+  .radius{
+    border-radius: 10px;
+  }
 
   .title {
     padding-bottom: 20px;
@@ -48,7 +51,7 @@ export const Integrantes = styled.div`
   .integrante {
     flex: 1 1 250px; 
     max-width: 250px; 
-    background-color: #f9f9f9;
+    background-color: #FAF6E7;
     border-radius: 10px;
     padding: 15px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
