@@ -67,10 +67,25 @@ export default function PHeader() {
         <div className="mobile-menu">
           <ul>
             
-            <li className="nav-item"><a href="#publico" className="nav-link">Público-alvo</a></li>
-            <li className="nav-item"><a href="#Carrossel" className="nav-link">Peças</a></li>
-            <li className="nav-item"><a href="#Beneficios" className="nav-link">Benefícios</a></li>
-            <li className="nav-item"><Link to="/grup" className="nav-link">Grupo</Link></li>
+          <li className="nav-item">
+                {window.location.pathname != '/' ? (
+                <a href="/" className="nav-link">Público-alvo</a>
+              ) : ( <a href="#publico" className="nav-link">Público-alvo</a>)} 
+              </li>
+              <li className="nav-item">
+                {window.location.pathname != '/' ? (
+                <a href="/" className="nav-link">Benefícios</a>
+              ) : ( <a href="#Beneficios" className="nav-link">Benefícios</a>)} 
+              </li><li className="nav-item">
+                {window.location.pathname != '/' ? (
+                <a href="/" className="nav-link">Peças</a>
+              ) : ( <a href="#Carrossel" className="nav-link">Peças</a>)} 
+              </li>
+              <li className="nav-item">
+                {window.location.pathname != '/' ? (
+                <a href="/grup" className="nav-link">Grupo</a>
+              ) : ( <Link to="/grup" className="nav-link">Grupo</Link>)} 
+              </li>
           </ul>
           
         </div>
