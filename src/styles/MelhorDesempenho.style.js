@@ -5,7 +5,7 @@ export const PageMelhorDesempenho = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 15%;
+    padding-top: 9%;
     flex-direction: row; 
   }
 
