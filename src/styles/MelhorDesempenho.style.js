@@ -20,6 +20,7 @@ export const PageMelhorDesempenho = styled.div`
 
   .Div-text h2 {
     color: #ffffff;
+    margin-left: 65px;
     padding-bottom: 20px;
     font-size: 40px;
     text-align: center; 
@@ -56,11 +57,12 @@ export const PageMelhorDesempenho = styled.div`
 
     .Div-text {
       width: 100%;
-      margin-right: 0;
+      margin-right: 110px;
       padding: 0 20px;
     }
 
     .Div-text h2 {
+      margin-left: 98px;
       font-size: 30px;
     }
 
