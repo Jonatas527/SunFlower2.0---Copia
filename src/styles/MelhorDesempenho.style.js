@@ -33,12 +33,13 @@ export const PageMelhorDesempenho = styled.div`
     border-radius: 20px;
     width: auto;
     font-size: 20px;
-    padding: 10px;
+    padding: 30px;
     margin-top: 20px;
+    margin-left: 110px; 
   }
 
   .img {
-    margin-right: 50px; 
+    margin-left: 10px; 
   }
 
   img {
@@ -104,7 +105,7 @@ export const StyledButton = styled.button`
   padding: 1em 1.8em;
   outline: none;
   
-  background: #212121;
+  background: #252121;
   color: #00aaff;
   text-transform: uppercase;
   letter-spacing: 2px;

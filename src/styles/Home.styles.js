@@ -35,6 +35,7 @@ export const Conteudo = styled.div`
     margin: 0 auto;
     font-size: 25px; /* Tamanho da fonte no desktop */
     max-width: 700px;
+    margin-top: 4.5rem;
   }
 
   @media screen and (max-width: 730px) {

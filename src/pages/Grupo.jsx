@@ -33,7 +33,7 @@ export function Grupo() {
                             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                                 <img src={link} className="radius" alt="" />
                             </a>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/jonatas.ss_" target="_blank" rel="noopener noreferrer">
                                 <img src={insta} className="radius" alt="" />
                             </a>
                         </div>
