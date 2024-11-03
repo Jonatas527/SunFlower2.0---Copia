@@ -2,16 +2,16 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 
-import  Landing from './pages/LandingPage';
-import  Publi  from './pages/Publico'; // Importação default
+import Landing from './pages/LandingPage';
+import Publi from './pages/Publico'; // Importação default
 import Grupo from './pages/Grupo';
 import Peças from './pages/Pecas';
 import Beneficios from './pages/Beneficios'
-import { MelhorDesempenho }  from './pages/MelhorDesempenho'
-import  MaiorEficiencia from './pages/MaiorEficiencia';
+import { MelhorDesempenho } from './pages/MelhorDesempenho'
+import MaiorEficiencia from './pages/MaiorEficiencia';
 import ProduçaoEnergia from './pages/ProducaoEnergia'
 import Tecnologia from './pages/TecAdaptativa'
-import  Otimizacao  from './pages/OtimizacaoEspaco'
+import Otimizacao from './pages/OtimizacaoEspaco'
 import Header from './pages/Header'
 
 
@@ -62,21 +62,21 @@ const router = createBrowserRouter([
 
   {
     path: '/pe',
-    element: <ProduçaoEnergia  />,
+    element: <ProduçaoEnergia />,
   },
 
   {
-  path: '/te',
-  element: <Tecnologia  />,
+    path: '/te',
+    element: <Tecnologia />,
   },
 
   {
-  path: '/ot',
-  element: <Otimizacao  />,
+    path: '/ot',
+    element: <Otimizacao />,
   },
 
 
-  
+
 
 ]);
 
@@ -84,12 +84,10 @@ const router = createBrowserRouter([
 export function App() {
   return (
 
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <RouterProvider router={router} />
-      </ThemeProvider>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <RouterProvider router={router} />
+    </ThemeProvider>
 
   );
 }
-
-

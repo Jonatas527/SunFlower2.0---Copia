@@ -23,6 +23,7 @@ export const CardsBeneficios = styled.div`
   
 
   .TitleWrapper {
+    border-radius: 10px;
     position: relative;
     width: 300px;
     height: 200px; 
