@@ -10,7 +10,7 @@ const Guia = () => {
 
   return (
     <GuiaM id='Guia'>
-      <h1 className="title">Guia de Utilização do Rastreador Solar Unidirecional</h1>
+      <h1 className="title">Guia de Utilização </h1>
       
       <div className="card-group">
         <div className={`card ${expandedCard === 0 ? 'expanded' : ''}`} onClick={() => toggleCard(0)}>

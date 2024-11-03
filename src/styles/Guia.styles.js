@@ -7,8 +7,9 @@ export const GuiaM = styled.div`
 
   .title {
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em; /* Tamanho da fonte do título */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+    color: #fff; /* Cor do título */
   }
 
   .card-group {
@@ -20,15 +21,15 @@ export const GuiaM = styled.div`
 
   .card {
     border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
     padding: 20px;
-    background-color: #fff;
+    background-color: #ecf0f1; /* Cor de fundo clara */
     transition: transform 0.3s, box-shadow 0.3s, max-height 0.3s ease-in-out;
     overflow: hidden;
     max-height: 200px; /* Altura inicial dos cards */
     cursor: pointer;
-    width: 300px; /* Definindo uma largura fixa para os cards */
+    width: 300px; /* Largura fixa para os cards */
   }
 
   .card.expanded {
@@ -37,19 +38,19 @@ export const GuiaM = styled.div`
 
   .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
   }
 
   .card-title {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 1.5em; /* Tamanho do título */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    color: #2980b9; /* Cor do título */
     text-align: center; /* Centraliza o título do card */
   }
 
   .card-text, .card-list {
-    font-size: 1em;
-    color: #666;
+    font-size: 1em; /* Tamanho do texto */
+    color: #34495e; /* Cor do texto */
     transition: opacity 0.3s;
     opacity: 0;
     height: 0;
@@ -76,5 +77,17 @@ export const GuiaM = styled.div`
 
   a:hover {
     text-decoration: underline;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .card {
+      width: 90%; /* Largura total em telas menores */
+      max-height: none; /* Remove a limitação de altura */
+    }
+
+    .title {
+      font-size: 2em; /* Ajuste do tamanho do título para telas menores */
+    }
   }
 `;

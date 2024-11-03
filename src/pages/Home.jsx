@@ -16,6 +16,7 @@ export function Home() {
       </div>
       
       <ShortVideo />
+      <ShortVideo />
     </Conteudo>
   );
 }
