@@ -30,11 +30,11 @@ export const Carrossel = styled.section`
 
     li button:before {
       font-size: 12px;
-      color: #bbb;
+      color: #4e66b1;
     }
 
     li.slick-active button:before {
-      color: #333;
+      color: #4e66b1;
     }
   }
 
