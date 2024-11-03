@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export const CardsBeneficios = styled.div`
-  h2 {
+width: 80%;
+margin: 0 auto;
+padding-top: 10px;
+text-align: center;  
+
+h2 {
     display: flex;
     justify-content: center;
     color: #ffff;

@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const GuiaM = styled.section`
   width: 80%;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 10px;
   text-align: center;
 
   .title {
-    font-size: 2em;
+    font-size: 40px;
     margin-bottom: 20px;
     color: #fff;
   }

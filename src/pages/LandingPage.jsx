@@ -10,8 +10,8 @@ const LandingPage = () => {
   return (
     <div>
       <Home />
-      <Guia />
       <Publico />
+      <Guia />
       <Beneficios />
       <Pecas />
     </div>
