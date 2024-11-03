@@ -1,9 +1,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 
 import Landing from './pages/LandingPage';
-import Publi from './pages/Publico'; // Importação default
+import Publi from './pages/Publico'; 
+import Guia from './pages/Guia';// Importação default
 import Grupo from './pages/Grupo';
 import Peças from './pages/Pecas';
 import Beneficios from './pages/Beneficios'
@@ -38,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: '/publi',
     element: <Publi />,
+  },
+  {
+    path: '/guia',
+    element: <Guia />,
   },
   {
     path: '/grup',

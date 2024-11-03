@@ -1,5 +1,6 @@
 import { Home } from './Home';
 import Publico from './Publico';
+import Guia from './Guia';
 import Beneficios from './Beneficios';
 
 
@@ -9,6 +10,7 @@ const LandingPage = () => {
   return (
     <div>
       <Home />
+      <Guia />
       <Publico />
       <Beneficios />
       <Pecas />
