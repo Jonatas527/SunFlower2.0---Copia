@@ -1,34 +1,92 @@
-import styled from "styled-components";
+// Pecas.styles.js
 
-export const Carrossel = styled.div`
+import styled from 'styled-components';
+
+export const Carrossel = styled.section`
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+
+  #pecas {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+  }
 
   .Carrossel {
-    width: 800px; 
-    margin: 30px auto 0 auto; 
-    padding: 0 15px; 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
   }
 
-  .Carrossel img {
+  .slick-slider {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+
+    li button:before {
+      font-size: 12px;
+      color: #bbb;
+    }
+
+    li.slick-active button:before {
+      color: #333;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    background-color: transparent;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .slick-prev:before {
+    background-image: url('path/to/left-arrow-icon.svg'); /* Substitua pelo ícone da seta esquerda */
+  }
+
+  .slick-next:before {
+    background-image: url('path/to/right-arrow-icon.svg'); /* Substitua pelo ícone da seta direita */
+  }
+
+  img {
     width: 100%;
     height: auto;
-    display: block; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
-  h2 {
-    color: #ffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    padding-top: 70px;
-  }
+  /* Responsividade para mobile */
+  @media (max-width: 768px) {
+    width: 90%;
+    padding-top: 30px;
 
-  @media (max-width: 730px) {
-    .Carrossel {
-      width: 100%; 
-      max-width: 350px; 
-      margin: 30px auto 0 auto; 
-      padding: 0 10px; 
+    #pecas {
+      font-size: 1.5em;
+    }
+
+    .slick-slider {
+      max-width: 90%;
+    }
+
+    .slick-prev, .slick-next {
+      width: 25px;
+      height: 25px;
     }
   }
 `;

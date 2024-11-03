@@ -42,6 +42,11 @@ export default function PHeader() {
               </li>
               <li className="nav-item">
                 {window.location.pathname != '/' ? (
+                <a href="/guia" className="nav-link">Guia</a>
+              ) : ( <a href="#Guia" className="nav-link">Guias</a>)} 
+              </li>
+              <li className="nav-item">
+                {window.location.pathname != '/' ? (
                 <a href="/" className="nav-link">Benefícios</a>
               ) : ( <a href="#Beneficios" className="nav-link">Benefícios</a>)} 
               </li>
@@ -49,11 +54,6 @@ export default function PHeader() {
                 {window.location.pathname != '/' ? (
                 <a href="/" className="nav-link">Peças</a>
               ) : ( <a href="#Carrossel" className="nav-link">Peças</a>)} 
-              </li>
-              <li className="nav-item">
-                {window.location.pathname != '/' ? (
-                <a href="/guia" className="nav-link">Guia</a>
-              ) : ( <a href="#Guia" className="nav-link">Guias</a>)} 
               </li>
               <li className="nav-item">
                 {window.location.pathname != '/' ? (
@@ -81,6 +81,11 @@ export default function PHeader() {
               </li>
               <li className="nav-item">
                 {window.location.pathname != '/' ? (
+                <a href="/guia" className="nav-link">Guia</a>
+              ) : ( <a href="#Guia" className="nav-link">Guias</a>)} 
+              </li>
+              <li className="nav-item">
+                {window.location.pathname != '/' ? (
                 <a href="/" className="nav-link">Benefícios</a>
               ) : ( <a href="#Beneficios" className="nav-link">Benefícios</a>)} 
               </li>
@@ -88,11 +93,6 @@ export default function PHeader() {
                 {window.location.pathname != '/' ? (
                 <a href="/" className="nav-link">Peças</a>
               ) : ( <a href="#Carrossel" className="nav-link">Peças</a>)} 
-              </li>
-              <li className="nav-item">
-                {window.location.pathname != '/' ? (
-                <a href="/guia" className="nav-link">Guia</a>
-              ) : ( <a href="#Guia" className="nav-link">Guias</a>)} 
               </li>
               <li className="nav-item">
                 {window.location.pathname != '/' ? (
