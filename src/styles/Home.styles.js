@@ -65,17 +65,18 @@ export const Video = styled.div`
   align-items: center;
   padding-top: 20px; /* Espaçamento acima dos vídeos */
 
- 
+ .yt{
+    right: 0;
+    display: flex;
+    jccustify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
   iframe {
-    width: 900px ;
-    max-width: 800x; /* Largura máxima para ocupar toda a largura disponível */
     
     border: none; /* Sem borda */
   }
 
-  @media (min-width: 731px) {
-    width: 90px ;
-    max-width: 80x; /* Largura máxima para ocupar toda a largura disponível */
-  }
 `;
