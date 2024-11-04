@@ -6,14 +6,13 @@ export const Conteudo = styled.div`
     margin: 0;
     font-family: 'Inter', sans-serif; 
   }
-
-
+  h2 {
+    color: #fff;
+  }
 
   .home {
     margin-bottom: 3rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: center / cover no-repeat;
     min-height: 100vh;
     color: #DFDEFF;
     text-align: center;
@@ -21,57 +20,62 @@ export const Conteudo = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
-    padding: 0 20px;
+    padding: 40px 20px; /* Padding reduzido para mobile */
+  }
+
+  .Div-Videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%; /* Para que ocupe toda a largura */
+  }
+
+  .h2-titulos-video {
+    padding: 4rem;
+    font-size: 32px;
   }
 
   .home h1 {
-    margin: 0 auto;
+    font-size: 2.5rem; /* Tamanho reduzido */
     max-width: 800px;
-    font-size:  50px; /* Tamanho da fonte no desktop */
   }
 
   .home p {
-    margin: 0 auto;
-    font-size: 25px; /* Tamanho da fonte no desktop */
-    max-width: 700px;
-    margin-top: 4.5rem;
+    font-size: 1.5rem; /* Tamanho reduzido */
+    max-width: 90%;
+    margin-top: 2rem;
   }
 
-  @media screen and (max-width: 730px) {
-
+  @media (min-width: 731px) {
     .home h1 {
-      margin: 0 auto;
-      font-size: 2.2rem 
+      font-size: 50px; /* Tamanho original para desktop */
     }
 
     .home p {
-      margin: 0 auto;
-      font-size: 1.7rem; 
-      max-width: 100%;
+      font-size: 25px; /* Tamanho original para desktop */
     }
   }
-`
+`;
 
 export const Video = styled.div`
-  .short-video {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
+  display: flex;
+  flex-direction: column; /* Manter flex-direction como coluna */
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px; /* Espaçamento acima dos vídeos */
+
+ 
+
+  iframe {
+    width: 900px ;
+    max-width: 800x; /* Largura máxima para ocupar toda a largura disponível */
+    
+    border: none; /* Sem borda */
   }
 
-  @media (max-width: 730px) {
-    .short-video {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      align-items: center;
-    }
-    .short-video iframe {
-      width: 100%;
-      height: auto;
-      max-width: 300px; 
-    }
+  @media (min-width: 731px) {
+    width: 90px ;
+    max-width: 80x; /* Largura máxima para ocupar toda a largura disponível */
   }
-`
-  
+`;

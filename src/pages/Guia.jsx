@@ -44,7 +44,7 @@ const Guia = () => {
         <div className={`card ${expandedCard === 4 ? 'expanded' : ''}`} onClick={() => toggleCard(4)}>
           <h2 className="card-title">Manutenção</h2>
           <p className="card-text">
-            Realize manutenções regulares, como limpeza dos painéis e verificação do funcionamento dos motores, para garantir o desempenho ideal do sistema.
+            Realize manutenções regulares, como limpeza dos painéis e verificação do funcionamento do servo motor, para garantir o desempenho ideal do sistema.
           </p>
         </div>
       </div>

@@ -8,28 +8,34 @@ import segundoVideoPath from '../assets/ImgBenePage/videoProjeto.mp4'; // Segund
 export function Home() {
   return (
     <Conteudo>
-      <PHeader/>
+      <PHeader />
 
       <div className="home" style={{ backgroundImage: `url(${fundo})` }}>
         <h1>Rastreador solar unidirecional de fluxo fotovoltaico</h1>
         <p>Rastreamento Solar Unilateral: Maximizando a Eficiência Energética para Sistemas Fotovoltaicos</p>
       </div>
+
+
+      <ShortVideo src={segundoVideoPath} />
+
       
-      <ShortVideo src={videoPath} />
-      <ShortVideo src={segundoVideoPath} /> {/* Usando a variável correta */}
     </Conteudo>
   );
 }
 
 const ShortVideo = ({ src }) => {
   return (
-    <Video>
-      <div className="short-video">
-        <video width="750" height="420" controls>
-          <source src={src} type="video/mp4" />
-          Seu navegador não suporta a tag de vídeo.
-        </video>
-      </div>
-    </Video>
+    
+      <Video>
+
+      <h2 className='h2-titulos-video'>Vídeo do Projeto</h2>
+       
+      <iframe width="800" height="400" src="https://www.youtube.com/embed/i3BokEY9fbY?si=WzRnTlneJQN_kelh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <h2 className='h2-titulos-video'>Vídeo do Jogo </h2>
+
+      <iframe width="800" height="400" src="https://www.youtube.com/embed/Stbruw3aTXI?si=m9xuicVk9PhEXBRf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </Video>
+    
   );
 };
