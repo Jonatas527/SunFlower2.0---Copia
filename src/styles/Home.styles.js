@@ -60,23 +60,29 @@ export const Conteudo = styled.div`
 
 export const Video = styled.div`
   display: flex;
-  flex-direction: column; /* Manter flex-direction como coluna */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px; /* Espaçamento acima dos vídeos */
+  padding-top: 20px;
 
- .yt{
-    right: 0;
+  .yt {
     display: flex;
-    jccustify-content: center;
-    align-items: center;
     flex-direction: column;
     align-items: center;
+    width: 100%; /* Ajustar a largura do contêiner */
   }
 
   iframe {
-    
+    width: 100%; /* Ajustar a largura para 100% */
+    max-width: 800px; /* Largura máxima */
+    height: 500px; /* Altura automática para manter a proporção */
     border: none; /* Sem borda */
   }
 
+  @media (max-width: 730px) {
+    iframe {
+      height: 50px
+      max-width: 70%; /* Ajustar para 100% em telas pequenas */
+    }
+  }
 `;
